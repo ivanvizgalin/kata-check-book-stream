@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    stream:
+      bindings:
+        process-in-0:
+          destination: publisher_channel
+        process-out-0:
+          destination: subscriber_channel
